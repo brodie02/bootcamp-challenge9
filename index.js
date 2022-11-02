@@ -26,7 +26,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: '',
+        message: 'Contribution Guidelines',
         name: 'contribute',
     },
     { // y/n?
