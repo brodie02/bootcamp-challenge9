@@ -42,9 +42,9 @@ ${data.test}
 ${data.license}
 
 ## Questions
-Click on my GitHub username to be taken to my GitHub profile!
-GitHub: ${data.github}
-Below is my email, contact me via email if you have any questions about this project.
+Click on my GitHub username to be taken to my GitHub profile!\n
+GitHub: [${data.github}](https://github.com/${data.github})\n
+Below is my email, contact me via email if you have any questions about this project.\n
 Email: ${data.email}
 `;
 }

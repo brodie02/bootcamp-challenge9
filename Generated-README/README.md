@@ -1,7 +1,7 @@
-# ded
+# Project
 
 ## Description
-ed
+It's very cool
 
 ## Table of Contents
 
@@ -13,22 +13,25 @@ ed
 * [Questions](#questions)
 
 ## Installation
-ede
+Download it
 
 ## Usage
-dded
+Use it lol
 
 ## Contributing
-edede
+Yep
 
 ## Test
-dde
+Just do it
 
 ## License
-Apache License 2.0
+MIT License
 
 ## Questions
 Click on my GitHub username to be taken to my GitHub profile!
-GitHub: ded
+
+GitHub: [bob](https://github.com/bob)
+
 Below is my email, contact me via email if you have any questions about this project.
-Email: de
+
+Email: bob@gmail.com
