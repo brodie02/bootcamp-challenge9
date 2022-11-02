@@ -54,7 +54,7 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(fileName) {
     inquirer
         .prompt(questions)
         .then((data) => {
@@ -66,7 +66,7 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init(data) {
-    const fileName = `${data.title}.md`
+    const fileName = `./Generated-README/README.md`
 
     writeToFile(fileName, data)
 }
