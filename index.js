@@ -23,9 +23,9 @@ const questions = [
         message: 'Please provide instructions on how to use your project.',
         name: 'usage',
     },
-    { // ???
+    {
         type: 'input',
-        message: 'Contribution Guidelines',
+        message: 'How can other people contribute to this project?',
         name: 'contribute',
     },
     { 
