@@ -1,5 +1,3 @@
- // TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 function renderLicenseBadge(license) {
   switch (license) {
     case "Apache License 2.0":
@@ -28,27 +26,48 @@ function renderLicenseBadge(license) {
     
     default:
       return ""
-
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
 function renderLicenseLink(license) {
+  switch (license) {
+    case "Apache License 2.0":
+      return `https://opensource.org/licenses/Apache-2.0`
 
+    case "GNU General Public License v3.0":
+      return `https://www.gnu.org/licenses/gpl-3.0`
+
+    case "MIT License":
+      return `https://opensource.org/licenses/MIT`
+
+    case "Boost Software License 1.0":
+      return `https://www.boost.org/LICENSE_1_0.txt`
+
+    case "Creative Commons Zero v1.0 Universal":
+      return `http://creativecommons.org/publicdomain/zero/1.0/`
+
+    case "Eclipse Public License 2.0":
+      return `https://opensource.org/licenses/EPL-1.0`
+
+    case "Mozilla Public License 2.0":
+      return `https://opensource.org/licenses/MPL-2.0`
+
+    case "The Unlicense":
+      return `http://unlicense.org/`
+    
+    default:
+      return ""
+  }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license === 'None') {
     return 
   } else {
-    return `## License\n${license}`
+    return `## License\nThis application is covered under the [${license}]`
   }
 }
 
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 
@@ -78,7 +97,7 @@ ${data.contribute}
 ## Test
 ${data.test}
 
-${renderLicenseSection(data.license)}
+${renderLicenseSection(data.license)}(${renderLicenseLink(data.license)})
 
 ## Questions
 Click on my GitHub username to be taken to my GitHub profile!\n
